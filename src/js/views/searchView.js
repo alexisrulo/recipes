@@ -8,15 +8,14 @@ class SearchView {
   }
 
   #clearInput() {
-    this.#parentEl.querySelector('.search__field').value = ''
+    this.#parentEl.querySelector('.search__field').value = '';
   }
 
   addHandlerSearch(handler) {
-    this.#parentEl
-      .addEventListener('submit', e => {
-        e.preventDefault();
-        handler();
-      });
+    this.#parentEl.addEventListener('submit', e => {
+      e.preventDefault();
+      handler();
+    });
   }
 }
 

@@ -50,6 +50,4 @@ export default class View {
     this._clearParent();
     this._parentEl.insertAdjacentHTML('afterbegin', error);
   }
-
-
 }
